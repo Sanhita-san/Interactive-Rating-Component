@@ -31,21 +31,21 @@ p {
   line-height: 1.5;
 }
 
-h2 {
+h1 {
   color: var(--White);
 }
 
 #card {
   background-color: var(--Dark-Blue);
   border-radius: 25px;
-  padding: 50px 30px;
+  padding: 40px 30px;
   width: 400px;
 }
 
 /* Rating Card */
 #rating-card {
   display: grid;
-  row-gap: 20px;
+  row-gap: 30px;
 }
 
 #star-img {
@@ -110,7 +110,7 @@ button:hover {
 #thankyou-card {
   display: none;
   justify-items: center;
-  row-gap: 25px;
+  row-gap: 30px;
   text-align: center;
 }
 
