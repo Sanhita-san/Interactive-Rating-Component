@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <main id="card">
+      <section id="rating-card">
+        <img id="star-img" src="./images/icon-star.svg" alt="" />
+        <h2>How did we do?</h2>
+        <p>
+          Please let us know how we did with your support request All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <form onsubmit="return false">
+          <div id="options">
+            <label for="one">
+              <input type="radio" id="one" name="rating" value="1" />
+              <span>1</span>
+            </label>
+
+            <label for="two">
+              <input type="radio" id="two" name="rating" value="2" />
+              <span>2</span>
+            </label>
+
+            <label for="three">
+              <input type="radio" id="three" name="rating" value="3" />
+              <span>3</span>
+            </label>
+
+            <label for="four">
+              <input type="radio" id="four" name="rating" value="4" />
+              <span>4</span>
+            </label>
+
+            <label for="five">
+              <input type="radio" id="five" name="rating" value="5" checked />
+              <span>5</span>
+            </label>
+          </div>
+
+          <button type="submit" onclick="rate()">Submit</button>
+        </form>
+      </section>
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+      <section id="thankyou-card">
+        <img
+          id="thankyou-img"
+          src="./images/illustration-thank-you.svg"
+          alt=""
+        />
+        <p id="chip"></p>
+        <h2>Thank you!</h2>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </section>
+      <!-- Thank you state end -->
+    </main>
+  </body>
+</html>
